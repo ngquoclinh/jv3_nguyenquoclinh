@@ -1,0 +1,8 @@
+#Yeu_cau_1
+DELETE FROM patients
+WHERE city = 'Hamilton' AND gender = 'Female';
+
+#Yeu_cau_2
+DELETE FROM patients
+WHERE height < 100
+   OR birth_date < '1960-01-01';

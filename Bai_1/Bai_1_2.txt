@@ -1,0 +1,40 @@
+#Yeu_cau_1
+SELECT *
+FROM doctors
+WHERE last_name LIKE 'Wa%';
+
+#Yeu_cau_2
+SELECT * 
+FROM doctors
+WHERE NOT specialty = "Pediatrics";
+
+#Yeu_cau_3
+SELECT * 
+FROM doctors
+ORDER BY specialty DESC, first_name DESC;
+
+#Yeu_cau_4
+SELECT specialty, COUNT(doctor_id) AS [num_doctors]
+FROM doctors
+GROUP BY specialty
+HAVING COUNT(doctor_id) > 1;
+
+#Yeu_cau_5
+SELECT first_name, COUNT(*) AS [total_admissions] 
+FROM patients
+JOIN admissions
+ON patients.patient_id = admissions.patient_id
+WHERE first_name LIKE "emil";
+
+#Yeu_cau_6
+SELECT first_name, last_name, weight
+FROM patients
+WHERE weight >=100 AND weight <=120
+ORDER BY weight DESC;
+
+#Yeu_cau_7
+SELECT *
+FROM patients
+WHERE patient_id IN (1,45,534);
+
+

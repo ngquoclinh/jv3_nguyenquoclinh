@@ -1,0 +1,9 @@
+#Yeu_cau_1
+UPDATE patients
+SET first_name = 'Donald 2', last_name = 'Waterfield 2'
+where first_name = 'Donald' AND last_name = 'Waterfield';
+
+#Yeu_cau_2
+UPDATE patients
+SET allergies = 'None'
+where allergies IS Null;
