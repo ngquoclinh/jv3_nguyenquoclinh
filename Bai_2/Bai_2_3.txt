@@ -1,0 +1,5 @@
+#Yeu_cau_1:
+db["luyentap"].updateOne({item: "Water Jug"},{$set:{price: 25}})
+
+#Yeu_cau_2:
+db["luyentap"].updateMany({},{$inc: {quantity:10}})

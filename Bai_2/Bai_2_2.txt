@@ -1,0 +1,14 @@
+#Yeu_cau_1:
+ db["luyentap"].find({}, {item: 1, quality: 1})
+
+#Yeu_cau_2: 
+db["luyentap"].find({category: {$in:["Furniture","Electronics"]}})
+
+#Yeu_cau_3:
+db["luyentap"].find({price: {$gte:10, $lte: 60}})
+
+#Yeu_cau_4: 
+db["luyentap"].find({"supplier.name":"BrightHome"})
+
+#Yeu_cau_5:
+db["luyentap"].find({}).sort({price: 1}).limit(2)

@@ -1,0 +1,62 @@
+[
+  {
+    "_id": 1,
+    "item": "Smartphone",
+    "category": "Electronics",
+    "quantity": 40,
+    "price": 700,
+    "supplier": {
+      "name": "TechMobile",
+      "country": "USA"
+    },
+    "last_updated": "2025-08-10T09:30:00.000Z"
+  },
+  {
+    "_id": 2,
+    "item": "Desk Lamp",
+    "category": "Furniture",
+    "quantity": 60,
+    "price": 45,
+    "supplier": {
+      "name": "BrightHome",
+      "country": "Canada"
+    },
+    "last_updated": "2025-08-11T11:15:00.000Z"
+  },
+  {
+    "_id": 3,
+    "item": "Backpack",
+    "category": "Accessories",
+    "quantity": 120,
+    "price": 35,
+    "supplier": {
+      "name": "CarryAll",
+      "country": "China"
+    },
+    "last_updated": "2025-08-12T14:50:00.000Z"
+  },
+  {
+    "_id": 4,
+    "item": "Gaming Mouse",
+    "category": "Electronics",
+    "quantity": 75,
+    "price": 60,
+    "supplier": {
+      "name": "ProGamer",
+      "country": "Japan"
+    },
+    "last_updated": "2025-08-13T08:20:00.000Z"
+  },
+  {
+    "_id": 5,
+    "item": "Water Jug",
+    "category": "Sports",
+    "quantity": 90,
+    "price": 18,
+    "supplier": {
+      "name": "HydroPlus",
+      "country": "Australia"
+    },
+    "last_updated": "2025-08-14T16:40:00.000Z"
+  }
+]

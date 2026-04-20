@@ -1,0 +1,1 @@
+db["luyentap"].deleteMany({ "supplier.country": "China" })

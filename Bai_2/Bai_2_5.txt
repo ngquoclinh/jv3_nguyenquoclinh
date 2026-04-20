@@ -1,0 +1,1 @@
+db["luyentap"].find({"supplier.country": {$in:["USA","Canada"]}})
