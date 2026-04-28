@@ -15,4 +15,29 @@ public class MusicService {
     public List<Music> getAllMusics() {
         return musicRepository.findAll();
     }
+
+    public List<Music> findByArtist(String artist) {
+        return musicRepository.findByArtist(artist);
+    }
+
+    public List<Music> findByYearAndTitle(Integer year, String title) {
+        return musicRepository.findByYearAndTitle(year, title);
+    }
+
+    public List<Music> findByRatingGreaterThan(Double rating) {
+        return musicRepository.findByRatingGreaterThan(rating);
+    }
+
+    public List<Music> findByRatingLessThanEqual(Double rating) {
+        return musicRepository.findByRatingLessThanEqual(rating);
+    }
+
+    public List<Music> findByYearBetween(Integer startYear, Integer endYear) {
+        return musicRepository.findByYearBetween(startYear, endYear);
+    }
+
+    public List<Music> searchByKeyword(String keyString) {
+        return musicRepository.findByTitleContainingIgnoreCase(keyString);
+    }
+
 }
